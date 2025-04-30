@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply bg-transparent outline-none;
+}
+
+.rc-slider-track {
+  @apply !bg-black;
+}
+
+.rc-slider-dot {
+  @apply !bottom-auto !top-1/2 !h-6 !w-1 !-translate-x-1/2 !-translate-y-1/2 !rounded-none !border-black/50 !bg-black/50;
+}
+
+.rc-slider-dot.rc-slider-dot-active {
+  @apply !border-black !bg-black;
+}
+
+.rc-slider-handle {
+  @apply !border-black !bg-black !opacity-100;
+}
+
+.rc-slider-handle-dragging {
+  @apply !bg-black !shadow-none;
+}
+
+.rc-slider-mark {
+  @apply !top-5 !text-sm;
+}
+
+.rc-slider-mark-text {
+  @apply !text-black;
+}
+
+.lazy-load-image-loaded.blur {
+  @apply blur-0;
+}
